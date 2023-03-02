@@ -14,3 +14,4 @@ stages {
                echo"This is an integration step"}
             }
         }
+}
