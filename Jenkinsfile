@@ -11,6 +11,6 @@ stages {
         }
         stage("integration") {
             steps {
-               sh 'echo"This is an integration step"}
+               echo"This is an integration step"}
             }
         }
