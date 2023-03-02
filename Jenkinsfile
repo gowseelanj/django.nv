@@ -1,8 +1,6 @@
 pipeline {
-    agent anyoptions {
-        gitLabConnection('gitlab')
-    }
-stages {
+    agent
+    stages {
         stage("build") {
             agent {
                 docker {
