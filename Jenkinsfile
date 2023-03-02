@@ -7,7 +7,7 @@ stages {
         }
         stage("test") {
             steps {
-                echo"This is a test step"}
+                echo"This is a test1 step"}
         }
         stage("integration") {
             steps {
