@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage("build") {
-            agent {
+            agent any {
                 docker {
                     image 'python:3.6'args '-u root'}
             }
@@ -16,7 +16,7 @@ pipeline {
                 """}
         }
         stage("test") {
-            agent {
+            agent any {
                 docker {
                     image 'python:3.6'args '-u root'}
             }
