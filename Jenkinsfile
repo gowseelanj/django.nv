@@ -11,19 +11,6 @@ stages {
         }
         stage("integration") {
             steps {
-               sh 'echo"This is an integration step" >output.txt' }
+               sh 'echo"This is an integration step"}
             }
         }
-       # create a file named output.txt and save it as an artifact
-       post {
-          always {
-               archiveArtifacts artifacts: 'output.txt', onlyIfSuccessful: true
-             }
-       }
-
-        stage("prod") {
-            steps {
-                input "Deploy to production?"echo"This is a deploy step."}
-        }
-    }
-}
